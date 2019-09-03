@@ -124,6 +124,41 @@
           }
         }
       }
+    },
+    "ng-widgets": {
+      "projectType": "library",
+      "root": "projects/ng-widgets",
+      "sourceRoot": "projects/ng-widgets/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "projects/ng-widgets/tsconfig.lib.json",
+            "project": "projects/ng-widgets/ng-package.json"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/ng-widgets/src/test.ts",
+            "tsConfig": "projects/ng-widgets/tsconfig.spec.json",
+            "karmaConfig": "projects/ng-widgets/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/ng-widgets/tsconfig.lib.json",
+              "projects/ng-widgets/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
     }},
   "defaultProject": "ng-widgets-demo"
 }

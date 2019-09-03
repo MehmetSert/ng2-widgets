@@ -17,7 +17,15 @@
     "lib": [
       "es2018",
       "dom"
-    ]
+    ],
+    "paths": {
+      "ng-widgets": [
+        "dist/ng-widgets"
+      ],
+      "ng-widgets/*": [
+        "dist/ng-widgets/*"
+      ]
+    }
   },
   "angularCompilerOptions": {
     "fullTemplateTypeCheck": true,
