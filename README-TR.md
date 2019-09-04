@@ -7,7 +7,7 @@
 ------------
 
 ## Demo ve Döküman
-Demo ve dökümanı incelemek için [buraya tıklayın](# "buraya tıklayın").
+Demo ve dökümanı incelemek için [buraya tıklayın](https://mehmetsert.github.io/ng-widgets-demo/ "buraya tıklayın").
 
 ## Kurulum
 Paketi yüklemek için npm'i kullanabilirsiniz.
@@ -22,7 +22,7 @@ npm install --save ng-widgets
 **Bileşen modüllerini içe aktar.**
 Kullanmak istediğiniz her bileşeni içe aktarın. Örnek: Currency Widget;
 ```javascript
-import {WidgetCurrencyModule} from 'ng-widgets/currency';
+import {WidgetCurrencyModule} from 'ng-widgets/widgets/widget-currency';
 
 @NgModule({
   imports: [

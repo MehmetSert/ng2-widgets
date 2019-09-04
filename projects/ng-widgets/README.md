@@ -7,7 +7,7 @@
 ------------
 
 ## Demo and Docs
-[Click here](# "Click here") for a live demo and docs.
+[Click here](https://mehmetsert.github.io/ng-widgets-demo/ "Click here") for a live demo and docs.
 
 ## Installation
 You can use npm to install the package.
@@ -22,7 +22,7 @@ npm install --save ng-widgets
 **Import the component modules**
 Import each component you want to use. Example: Currency Widget;
 ```javascript
-import {WidgetCurrencyModule} from 'ng-widgets/currency';
+import {WidgetCurrencyModule} from 'ng-widgets/widgets/widget-currency';
 
 @NgModule({
   imports: [
