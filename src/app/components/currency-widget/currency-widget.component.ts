@@ -8,7 +8,7 @@ import {Component, OnInit, ViewEncapsulation} from '@angular/core';
 })
 export class CurrencyWidgetComponent implements OnInit {
 
-  moduleImport = `import {WidgetCurrencyModule} from 'ng2-widgets/widgets/widget-currency';
+  moduleImport = `import {WidgetCurrencyModule} from 'ng2-widgets';
 
 @NgModule({
   imports: [

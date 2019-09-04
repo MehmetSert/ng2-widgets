@@ -7,7 +7,7 @@
 ------------
 
 ## Demo and Docs
-[Click here](https://mehmetsert.github.io/ng2-widgets-demo/ "Click here") for a live demo and docs.
+[Click here](https://mehmetsert.github.io/ng2-widgets/ "Click here") for a live demo and docs.
 
 ## Installation
 You can use npm to install the package.
@@ -22,7 +22,7 @@ npm install --save ng2-widgets
 **Import the component modules**
 Import each component you want to use. Example: Currency Widget;
 ```javascript
-import {WidgetCurrencyModule} from 'ng2-widgets/widgets/widget-currency';
+import {WidgetCurrencyModule} from 'ng2-widgets';
 
 @NgModule({
   imports: [

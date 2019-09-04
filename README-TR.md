@@ -7,7 +7,7 @@
 ------------
 
 ## Demo ve Döküman
-Demo ve dökümanı incelemek için [buraya tıklayın](https://mehmetsert.github.io/ng2-widgets-demo/ "buraya tıklayın").
+Demo ve dökümanı incelemek için [buraya tıklayın](https://mehmetsert.github.io/ng2-widgets/ "buraya tıklayın").
 
 ## Kurulum
 Paketi yüklemek için npm'i kullanabilirsiniz.
@@ -22,7 +22,7 @@ npm install --save ng2-widgets
 **Bileşen modüllerini içe aktar.**
 Kullanmak istediğiniz her bileşeni içe aktarın. Örnek: Currency Widget;
 ```javascript
-import {WidgetCurrencyModule} from 'ng2-widgets/widgets/widget-currency';
+import {WidgetCurrencyModule} from 'ng2-widgets';
 
 @NgModule({
   imports: [
