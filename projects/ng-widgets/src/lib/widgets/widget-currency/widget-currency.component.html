@@ -1,1 +1,17 @@
-<p>widget-currency works!</p>
+<div class="widget-currency-container {{ status ? 'success' : 'danger' }} {{ customClass }}"
+     [ngStyle]="{ 'background-color': bgColor, 'color': textColor, 'border-bottom-width': borderBottomWidth, 'border-bottom-color': borderBottomColor }">
+  <div class="currency-icon-container" [ngStyle]="{ 'background-color': iconBgColor, 'color': iconColor }">
+    <i class="{{ currencyIcon }}"></i>
+  </div>
+  <div class="currency-info-container">
+    <div class="currency-value-container">
+      <span class="currency-title" [ngStyle]="{ 'color': currencyTitleColor }">{{ currencyTitle }}</span>
+      <strong class="currency-value">{{ currencyValue }}</strong>
+    </div>
+    <div class="currency-status-container">
+      <span class="currency-status" *ngIf="status !== undefined"><i class="{{ status ? 'fas fa-caret-up' : 'fas fa-caret-down' }}"></i></span>
+      <span class="currency-percent" *ngIf="currencyPercent">%{{ currencyPercent }}</span>
+    </div>
+  </div>
+</div>
+

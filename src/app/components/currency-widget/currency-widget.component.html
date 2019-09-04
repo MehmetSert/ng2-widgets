@@ -1,0 +1,199 @@
+<mat-tab-group>
+  <mat-tab label="API">
+    <h2>Widget - Currency</h2>
+    <code><![CDATA[import {WidgetCurrencyModule} from 'ng-widgets';]]></code>
+    <h3>Directives</h3>
+  </mat-tab>
+  <mat-tab label="EXAMPLES">
+    <mat-card>
+      <mat-card-header>
+        <mat-card-title>Basic</mat-card-title>
+      </mat-card-header>
+      <mat-card-content>
+        <mat-tab-group>
+          <mat-tab label="DEMO">
+            <div style="width: 200px">
+              <widget-currency
+                [status]="true"
+                [currencyIcon]="'fas fa-dollar-sign'"
+                [currencyTitle]="'Dolar'"
+                [currencyValue]="5.85"
+                [currencyPercent]="'0.21'"
+                [iconBgColor]="'#85bb65'"
+                [iconColor]="'#34343c'"
+                [borderBottomColor]="'#85bb65'"></widget-currency>
+            </div>
+          </mat-tab>
+          <mat-tab label="HTML">
+            <pre><code [highlight]="basicHtml"></code></pre>
+          </mat-tab>
+        </mat-tab-group>
+      </mat-card-content>
+    </mat-card>
+
+    <mat-card>
+      <mat-card-header>
+        <mat-card-title>Horizontal</mat-card-title>
+      </mat-card-header>
+      <mat-card-content>
+        <mat-tab-group>
+          <mat-tab label="DEMO">
+            <div class="currency-horizontal">
+              <div class="currency-item">
+                <widget-currency
+                  [status]="true"
+                  [currencyIcon]="'fas fa-dollar-sign'"
+                  [currencyTitle]="'Dolar'"
+                  [currencyValue]="5.85"
+                  [currencyPercent]="'0.21'"
+                  [iconBgColor]="'#85bb65'"
+                  [iconColor]="'#34343c'"
+                  [borderBottomColor]="'#85bb65'"></widget-currency>
+              </div>
+
+              <div class="currency-item">
+                <widget-currency
+                  [status]="false"
+                  [currencyIcon]="'fas fa-euro-sign'"
+                  [currencyTitle]="'Euro'"
+                  [currencyValue]="6.32"
+                  [currencyPercent]="'-0.34'"
+                  [iconBgColor]="'#f58724'"
+                  [iconColor]="'#34343c'"
+                  [borderBottomColor]="'#f58724'"></widget-currency>
+              </div>
+
+              <div class="currency-item">
+                <widget-currency
+                  [status]="false"
+                  [currencyIcon]="'fas fa-coins'"
+                  [currencyTitle]="'Altın'"
+                  [currencyValue]="284.65"
+                  [currencyPercent]="'-0.31'"
+                  [iconBgColor]="'#f9a602'"
+                  [iconColor]="'#34343c'"
+                  [borderBottomColor]="'#f9a602'"></widget-currency>
+              </div>
+            </div>
+          </mat-tab>
+          <mat-tab label="HTML">
+            <pre><code [highlight]="horizontalHtml"></code></pre>
+          </mat-tab>
+          <mat-tab label="SCSS">
+            <pre><code [highlight]="horizontalScss"></code></pre>
+          </mat-tab>
+        </mat-tab-group>
+      </mat-card-content>
+    </mat-card>
+
+    <mat-card>
+      <mat-card-header>
+        <mat-card-title>Vertical</mat-card-title>
+      </mat-card-header>
+      <mat-card-content>
+        <mat-tab-group>
+          <mat-tab label="DEMO">
+            <div class="currency-vertical">
+              <div class="currency-item">
+                <widget-currency
+                  [status]="true"
+                  [currencyIcon]="'fas fa-dollar-sign'"
+                  [currencyTitle]="'Dolar'"
+                  [currencyValue]="5.85"
+                  [currencyPercent]="'0.21'"
+                  [iconBgColor]="'#85bb65'"
+                  [iconColor]="'#34343c'"
+                  [borderBottomColor]="'#85bb65'"></widget-currency>
+              </div>
+
+              <div class="currency-item">
+                <widget-currency
+                  [status]="false"
+                  [currencyIcon]="'fas fa-euro-sign'"
+                  [currencyTitle]="'Euro'"
+                  [currencyValue]="6.32"
+                  [currencyPercent]="'-0.34'"
+                  [iconBgColor]="'#f58724'"
+                  [iconColor]="'#34343c'"
+                  [borderBottomColor]="'#f58724'"></widget-currency>
+              </div>
+
+              <div class="currency-item">
+                <widget-currency
+                  [status]="false"
+                  [currencyIcon]="'fas fa-coins'"
+                  [currencyTitle]="'Altın'"
+                  [currencyValue]="284.65"
+                  [currencyPercent]="'-0.31'"
+                  [iconBgColor]="'#f9a602'"
+                  [iconColor]="'#34343c'"
+                  [borderBottomColor]="'#f9a602'"></widget-currency>
+              </div>
+            </div>
+          </mat-tab>
+          <mat-tab label="HTML">
+            <pre><code [highlight]="verticalHtml"></code></pre>
+          </mat-tab>
+          <mat-tab label="SCSS">
+            <pre><code [highlight]="verticalScss"></code></pre>
+          </mat-tab>
+        </mat-tab-group>
+      </mat-card-content>
+    </mat-card>
+
+    <mat-card>
+      <mat-card-header>
+        <mat-card-title>Custom</mat-card-title>
+      </mat-card-header>
+      <mat-card-content>
+        <mat-tab-group>
+          <mat-tab label="DEMO">
+            <div class="custom-demo">
+              <widget-currency
+                [status]="true"
+                [currencyIcon]="'fas fa-dollar-sign'"
+                [currencyTitle]="'Dolar'"
+                [currencyValue]="5.85"
+                [currencyPercent]="'0.21'"
+                [iconBgColor]="'#85bb65'"
+                [iconColor]="'#34343c'"
+                [borderBottomColor]="'#85bb65'"
+                [bgColor]="'rgba(133, 187, 101, 0.5)'"
+                [customClass]="'custom-currency'"></widget-currency>
+
+              <widget-currency
+                [status]="false"
+                [currencyIcon]="'fas fa-euro-sign'"
+                [currencyTitle]="'Euro'"
+                [currencyValue]="6.32"
+                [currencyPercent]="'-0.34'"
+                [iconBgColor]="'#f58724'"
+                [iconColor]="'#34343c'"
+                [borderBottomColor]="'#f58724'"
+                [bgColor]="'rgba(245, 135, 36, 0.4)'"
+                [customClass]="'custom-currency'"></widget-currency>
+
+              <widget-currency
+                [status]="false"
+                [currencyIcon]="'fas fa-coins'"
+                [currencyTitle]="'Altın'"
+                [currencyValue]="284.65"
+                [currencyPercent]="'-0.31'"
+                [iconBgColor]="'#f9a602'"
+                [iconColor]="'#34343c'"
+                [borderBottomColor]="'#f9a602'"
+                [bgColor]="'rgba(249, 166, 2, 0.4)'"
+                [customClass]="'custom-currency'"></widget-currency>
+            </div>
+          </mat-tab>
+          <mat-tab label="HTML">
+            <pre><code [highlight]="customHtml"></code></pre>
+          </mat-tab>
+          <mat-tab label="SCSS">
+            <pre><code [highlight]="customScss"></code></pre>
+          </mat-tab>
+        </mat-tab-group>
+      </mat-card-content>
+    </mat-card>
+  </mat-tab>
+</mat-tab-group>

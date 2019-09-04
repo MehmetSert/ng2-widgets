@@ -1,0 +1,78 @@
+@import "../../ng-widgets.component";
+
+.widget-currency-container {
+  display: flex;
+  padding: 15px;
+  align-items: center;
+  border-bottom-style: solid;
+  .currency-icon-container {
+    width: 40px;
+    height: 40px;
+    margin-right: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    box-shadow: 0 2px 4px rgba(59,64,69,0.1);
+    -webkit-transition: .3s all;
+    -moz-transition: .3s all;
+    -ms-transition: .3s all;
+    -o-transition: .3s all;
+    transition: .3s all;
+    i {
+
+    }
+  }
+  .currency-info-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex: 1;
+    .currency-value-container {
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+      .currency-title {
+        font-size: 13px;
+        font-weight: 500;
+        text-transform: uppercase;
+      }
+      .currency-value {
+
+      }
+    }
+    .currency-status-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      .currency-status {
+        font-size: 35px;
+        line-height: 21px;
+        margin-bottom: 3px;
+        i {
+          line-height: 0;
+        }
+      }
+      .currency-percent {
+        font-size: 11px;
+      }
+    }
+  }
+  &.success {
+    .currency-status,
+    .currency-percent {
+      color: green!important;
+    }
+  }
+  &.danger {
+    .currency-status,
+    .currency-percent {
+      color: red!important;
+    }
+  }
+  &:hover {
+    .currency-icon-container {
+      box-shadow: 0 4px 8px rgba(59,64,69,0.2);
+    }
+  }
+}

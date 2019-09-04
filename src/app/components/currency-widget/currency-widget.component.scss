@@ -1,0 +1,27 @@
+.currency-horizontal {
+  display: flex;
+  .currency-item {
+    width: 200px;
+  }
+}
+
+.currency-vertical {
+  display: block;
+  .currency-item {
+    display: block;
+    width: 200px;
+  }
+}
+
+.custom-demo {
+  display: flex;
+  widget-currency {
+    width: 100%;
+    margin: 5px;
+    .custom-currency {
+      padding: 20px;
+      box-shadow: 0 7px 10px 0 rgba(59, 64, 69, 0.2);
+      border-bottom: none;
+    }
+  }
+}
