@@ -1,16 +1,18 @@
 {
-  "name": "ng-widgets",
+  "name": "ng2-widgets",
   "version": "1.0.0",
   "description": "Angular Widgets includes a variety of components that you can easily use in your applications.",
   "author": "Mehmet Sert",
   "repository": {
     "type": "git",
-    "url": "https://github.com/MehmetSert/ng-widgets.git"
+    "url": "https://github.com/MehmetSert/ng2-widgets.git"
   },
-  "homepage": "https://github.com/MehmetSert/ng-widgets",
+  "homepage": "https://github.com/MehmetSert/ng2-widgets",
   "keywords": [
     "angular",
     "angular 2",
+    "angular 2+",
+    "angular 7",
     "angular 8",
     "angular widgets",
     "angular exchange rate",
