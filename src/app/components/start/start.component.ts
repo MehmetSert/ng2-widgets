@@ -7,9 +7,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class StartComponent implements OnInit {
 
-  npmInstall = `npm install --save ng-widgets`;
+  npmInstall = `npm install --save ng2-widgets`;
 
-  step1 = `import {WidgetCurrencyModule} from 'ng-widgets/widgets/widget-currency';
+  step1 = `import {WidgetCurrencyModule} from 'ng2-widgets/widgets/widget-currency';
 
 @NgModule({
   imports: [

@@ -1,20 +1,20 @@
 <p align="center">
-  <img height="200px" width="200px" style="text-align: center;" src="https://www.mehmetsert.com.tr/assets/img/ng-widgets-logo.png">
+  <img height="200px" width="200px" style="text-align: center;" src="https://www.mehmetsert.com.tr/assets/img/ng2-widgets-logo.png">
   <h1 align="center">Angular Widgets</h1>
 </p>
-<p align="center">Angular Widgets içerisinde, uygulamalarınızda kolayca kullanabileceğiniz çeşitli bileşenleri barındırır.</p>
+<p align="center">Angular 2+ Widgets içerisinde, uygulamalarınızda kolayca kullanabileceğiniz çeşitli bileşenleri barındırır.</p>
 
 ------------
 
 ## Demo ve Döküman
-Demo ve dökümanı incelemek için [buraya tıklayın](https://mehmetsert.github.io/ng-widgets-demo/ "buraya tıklayın").
+Demo ve dökümanı incelemek için [buraya tıklayın](https://mehmetsert.github.io/ng2-widgets-demo/ "buraya tıklayın").
 
 ## Kurulum
 Paketi yüklemek için npm'i kullanabilirsiniz.
 
 ###### NPM
 ```
-npm install --save ng-widgets
+npm install --save ng2-widgets
 ```
 
 ## Kullanım
@@ -22,7 +22,7 @@ npm install --save ng-widgets
 **Bileşen modüllerini içe aktar.**
 Kullanmak istediğiniz her bileşeni içe aktarın. Örnek: Currency Widget;
 ```javascript
-import {WidgetCurrencyModule} from 'ng-widgets/widgets/widget-currency';
+import {WidgetCurrencyModule} from 'ng2-widgets/widgets/widget-currency';
 
 @NgModule({
   imports: [

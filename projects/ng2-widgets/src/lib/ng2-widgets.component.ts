@@ -1,15 +1,15 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'lib-ng-widgets',
+  selector: 'lib-ng2-widgets',
   template: `
     <p>
-      ng-widgets works!
+      ng2-widgets works!
     </p>
   `,
   styleUrls: ['./ng-widgets.component.scss']
 })
-export class NgWidgetsComponent implements OnInit {
+export class Ng2WidgetsComponent implements OnInit {
 
   constructor() { }
 

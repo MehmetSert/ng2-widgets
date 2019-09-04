@@ -3,7 +3,7 @@ import {APP_INITIALIZER, NgModule} from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import {WidgetCurrencyModule} from '../../projects/ng-widgets/src/lib/widgets/widget-currency/widget-currency.module';
+import {WidgetCurrencyModule} from '../../projects/ng2-widgets/src/lib/widgets/widget-currency/widget-currency.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HomeComponent } from './components/home/home.component';
 import { LayoutModule } from '@angular/cdk/layout';

@@ -127,33 +127,33 @@
         }
       }
     },
-    "ng-widgets": {
+    "ng2-widgets": {
       "projectType": "library",
-      "root": "projects/ng-widgets",
-      "sourceRoot": "projects/ng-widgets/src",
+      "root": "projects/ng2-widgets",
+      "sourceRoot": "projects/ng2-widgets/src",
       "prefix": "lib",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-ng-packagr:build",
           "options": {
-            "tsConfig": "projects/ng-widgets/tsconfig.lib.json",
-            "project": "projects/ng-widgets/ng-package.json"
+            "tsConfig": "projects/ng2-widgets/tsconfig.lib.json",
+            "project": "projects/ng2-widgets/ng-package.json"
           }
         },
         "test": {
           "builder": "@angular-devkit/build-angular:karma",
           "options": {
-            "main": "projects/ng-widgets/src/test.ts",
-            "tsConfig": "projects/ng-widgets/tsconfig.spec.json",
-            "karmaConfig": "projects/ng-widgets/karma.conf.js"
+            "main": "projects/ng2-widgets/src/test.ts",
+            "tsConfig": "projects/ng2-widgets/tsconfig.spec.json",
+            "karmaConfig": "projects/ng2-widgets/karma.conf.js"
           }
         },
         "lint": {
           "builder": "@angular-devkit/build-angular:tslint",
           "options": {
             "tsConfig": [
-              "projects/ng-widgets/tsconfig.lib.json",
-              "projects/ng-widgets/tsconfig.spec.json"
+              "projects/ng2-widgets/tsconfig.lib.json",
+              "projects/ng2-widgets/tsconfig.spec.json"
             ],
             "exclude": [
               "**/node_modules/**"

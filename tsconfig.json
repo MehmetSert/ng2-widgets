@@ -19,11 +19,11 @@
       "dom"
     ],
     "paths": {
-      "ng-widgets": [
-        "dist/ng-widgets"
+      "ng2-widgets": [
+        "dist/ng2-widgets"
       ],
-      "ng-widgets/*": [
-        "dist/ng-widgets/*"
+      "ng2-widgets/*": [
+        "dist/ng2-widgets/*"
       ]
     }
   },

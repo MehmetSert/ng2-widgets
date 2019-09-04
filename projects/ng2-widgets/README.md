@@ -1,20 +1,20 @@
 <p align="center">
-  <img height="200px" width="200px" style="text-align: center;" src="https://www.mehmetsert.com.tr/assets/img/ng-widgets-logo.png">
+  <img height="200px" width="200px" style="text-align: center;" src="https://www.mehmetsert.com.tr/assets/img/ng2-widgets-logo.png">
   <h1 align="center">Angular Widgets</h1>
 </p>
-<p align="center">Angular Widgets includes a variety of components that you can easily use in your applications.</p>
+<p align="center">Angular 2+ Widgets includes a variety of components that you can easily use in your applications.</p>
 
 ------------
 
 ## Demo and Docs
-[Click here](https://mehmetsert.github.io/ng-widgets-demo/ "Click here") for a live demo and docs.
+[Click here](https://mehmetsert.github.io/ng2-widgets-demo/ "Click here") for a live demo and docs.
 
 ## Installation
 You can use npm to install the package.
 
 ###### NPM
 ```
-npm install --save ng-widgets
+npm install --save ng2-widgets
 ```
 
 ## Use
@@ -22,7 +22,7 @@ npm install --save ng-widgets
 **Import the component modules**
 Import each component you want to use. Example: Currency Widget;
 ```javascript
-import {WidgetCurrencyModule} from 'ng-widgets/widgets/widget-currency';
+import {WidgetCurrencyModule} from 'ng2-widgets/widgets/widget-currency';
 
 @NgModule({
   imports: [
