@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
       ng2-widgets works!
     </p>
   `,
-  styleUrls: ['./ng-widgets.component.scss']
+  styleUrls: ['./ng2-widgets.component.scss']
 })
 export class Ng2WidgetsComponent implements OnInit {
 
