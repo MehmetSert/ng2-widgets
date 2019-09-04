@@ -3,17 +3,22 @@
       [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
       [mode]="(isHandset$ | async) ? 'over' : 'side'"
       [opened]="(isHandset$ | async) === false">
-    <mat-toolbar>
-      Docs
+    <mat-toolbar class="sidebar-header">
+      <span>{{ 'docs' | translate }}</span>
+      <ul class="language">
+        <li><a (click)="translateService.use('tr')"><img src="https://lipis.github.io/flag-icon-css/flags/4x3/tr.svg"></a></li>
+        <li><a (click)="translateService.use('en')"><img src="https://lipis.github.io/flag-icon-css/flags/4x3/gb.svg"></a></li>
+      </ul>
     </mat-toolbar>
     <mat-nav-list>
-      <a mat-list-item routerLink="/">Get Started</a>
-      <a mat-list-item routerLink="/currencies">Currencies</a>
-      <a mat-list-item routerLink="#">Weather <small> - Coming Soon</small></a>
-      <a mat-list-item routerLink="#">Progress <small> - Coming Soon</small></a>
-      <a mat-list-item routerLink="#">Table <small> - Coming Soon</small></a>
-      <a mat-list-item routerLink="#">Todo list <small> - Coming Soon</small></a>
-      <a mat-list-item routerLink="#">Weekly sales <small> - Coming Soon</small></a>
+      <a mat-list-item routerLink="/">{{ 'getStarted' | translate }}</a>
+      <span class="d-block menu-title">{{ 'widgets' | translate }}</span>
+      <a mat-list-item routerLink="/currencies">{{ 'currency' | translate }}</a>
+      <a mat-list-item routerLink="#">{{ 'weather' | translate }} <small> - {{ 'comingSoon' | translate }}</small></a>
+      <a mat-list-item routerLink="#">{{ 'progress' | translate }} <small> - {{ 'comingSoon' | translate }}</small></a>
+      <a mat-list-item routerLink="#">{{ 'table' | translate }} <small> - {{ 'comingSoon' | translate }}</small></a>
+      <a mat-list-item routerLink="#">{{ 'todoList' | translate }} <small> - {{ 'comingSoon' | translate }}</small></a>
+      <a mat-list-item routerLink="#">{{ 'weeklySales' | translate }} <small> - {{ 'comingSoon' | translate }}</small></a>
     </mat-nav-list>
   </mat-sidenav>
   <mat-sidenav-content>
@@ -27,7 +32,10 @@
           *ngIf="isHandset$ | async">
           <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
         </button>
-        <span>Angular Widgets Demo</span>
+        <div class="header-logo">
+          <img src="https://www.mehmetsert.com.tr/assets/img/ng-widgets-logo.png" alt="Angular Widgets">
+          <span>Angular Widgets</span>
+        </div>
         <span class="example-spacer"></span>
         <ul class="header-links">
           <li><a href="https://kodumunblogu.net/auth/mehmet-sert-11" target="_blank"><i class="fas fa-code"></i> <span>Kodumunblogu</span></a></li>

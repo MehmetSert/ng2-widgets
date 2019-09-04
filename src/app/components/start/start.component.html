@@ -1,1 +1,35 @@
-<p>start works!</p>
+<div class="docs">
+  <div class="docs-top">
+    <div class="logo">
+      <img src="https://www.mehmetsert.com.tr/assets/img/ng-widgets-logo.png" alt="Angular Widgets">
+    </div>
+    <div class="info">
+      <h1>Angular Widgets | ng-widgets</h1>
+      <div class="widget-list">
+        <h2>{{ 'currency' | translate }}</h2>
+        <h2>{{ 'weather' | translate }}</h2>
+        <h2>{{ 'progress' | translate }}</h2>
+        <h2>{{ 'table' | translate }}</h2>
+        <h2>{{ 'todoList' | translate }}</h2>
+        <h2>{{ 'weeklySales' | translate }}</h2>
+      </div>
+      <p>
+        {{ 'angularWidgetsDescription' | translate }}
+      </p>
+    </div>
+  </div>
+  <h3 style="margin-top: 15px;">{{ 'installation' | translate }}</h3>
+  <p>
+    {{ 'installationText' | translate }}
+  </p>
+  <h6>NPM</h6>
+  <pre><code [highlight]="npmInstall"></code></pre>
+  <h3>{{ 'use' | translate }}</h3>
+  <p>
+    <strong>{{ 'useTextStrong' | translate }}</strong>
+  </p>
+  <p>
+    {{ 'useText' | translate }}
+  </p>
+  <pre><code [highlight]="step1"></code></pre>
+</div>

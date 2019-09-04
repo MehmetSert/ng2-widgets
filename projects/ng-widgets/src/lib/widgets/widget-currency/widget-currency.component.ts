@@ -7,12 +7,12 @@ import {Component, Input, OnInit} from '@angular/core';
 })
 export class WidgetCurrencyComponent implements OnInit {
 
-  @Input() customClass: string;
   @Input() status: boolean;
   @Input() currencyIcon: string; // required
   @Input() currencyTitle: string; // required
   @Input() currencyValue: number; // required
   @Input() currencyPercent: number;
+  @Input() customClass: string;
 
   @Input() bgColor: string = '#e8e9c9';
   @Input() textColor: string = '#3e3e3c';

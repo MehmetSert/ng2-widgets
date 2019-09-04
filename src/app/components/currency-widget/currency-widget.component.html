@@ -1,13 +1,113 @@
 <mat-tab-group>
   <mat-tab label="API">
-    <h2>Widget - Currency</h2>
-    <code><![CDATA[import {WidgetCurrencyModule} from 'ng-widgets';]]></code>
-    <h3>Directives</h3>
+    <h2>{{ 'currency' | translate }}</h2>
+    <pre><code [highlight]="moduleImport"></code></pre>
+    <h3>{{ 'inputs' | translate }}</h3>
+    <table>
+      <tr>
+        <th>{{ 'name' | translate }}</th>
+        <th>{{ 'type' | translate }}</th>
+        <th>{{ 'required' | translate }}</th>
+        <th>{{ 'default' | translate }}</th>
+        <th>{{ 'description' | translate }}</th>
+      </tr>
+      <tr>
+        <td>status</td>
+        <td>boolean</td>
+        <td>{{ 'no' | translate }}</td>
+        <td>-</td>
+        <td>{{ 'currencyWidgetDescriptionStatus' | translate }}</td>
+      </tr>
+      <tr>
+        <td>currencyIcon</td>
+        <td>string</td>
+        <td>{{ 'yes' | translate }}</td>
+        <td>-</td>
+        <td>{{ 'currencyWidgetDescriptionCurrencyIcon' | translate }}</td>
+      </tr>
+      <tr>
+        <td>currencyTitle</td>
+        <td>string</td>
+        <td>{{ 'yes'  | translate }}</td>
+        <td>-</td>
+        <td>{{ 'currencyWidgetDescriptionCurrencyTitle' | translate }}</td>
+      </tr>
+      <tr>
+        <td>currencyValue</td>
+        <td>number</td>
+        <td>{{ 'yes'  | translate }}</td>
+        <td>-</td>
+        <td>{{ 'currencyWidgetDescriptionCurrencyValue' | translate }}</td>
+      </tr>
+      <tr>
+        <td>currencyPercent</td>
+        <td>number</td>
+        <td>{{ 'no' | translate }}</td>
+        <td>-</td>
+        <td>{{ 'currencyWidgetDescriptionCurrencyPercent' | translate }}</td>
+      </tr>
+      <tr>
+        <td>customClass</td>
+        <td>string</td>
+        <td>{{ 'no' | translate }}</td>
+        <td>-</td>
+        <td>{{ 'currencyWidgetDescriptionCustomClass' | translate }}</td>
+      </tr>
+      <tr>
+        <td>bgColor</td>
+        <td>string</td>
+        <td>{{ 'no' | translate }}</td>
+        <td>#e8e9c9</td>
+        <td>{{ 'currencyWidgetDescriptionBgColor' | translate }}</td>
+      </tr>
+      <tr>
+        <td>textColor</td>
+        <td>string</td>
+        <td>{{ 'no' | translate }}</td>
+        <td>#3e3e3c</td>
+        <td>{{ 'currencyWidgetDescriptionTextColor' | translate }}</td>
+      </tr>
+      <tr>
+        <td>iconBgColor</td>
+        <td>string</td>
+        <td>{{ 'no' | translate }}</td>
+        <td>#44524b</td>
+        <td>{{ 'currencyWidgetDescriptionIconBgColor' | translate }}</td>
+      </tr>
+      <tr>
+        <td>iconColor</td>
+        <td>string</td>
+        <td>{{ 'no' | translate }}</td>
+        <td>#ffffff</td>
+        <td>{{ 'currencyWidgetDescriptionIconColor' | translate }}</td>
+      </tr>
+      <tr>
+        <td>currencyTitleColor</td>
+        <td>string</td>
+        <td>{{ 'no' | translate }}</td>
+        <td>#44524b</td>
+        <td>{{ 'currencyWidgetDescriptionCurrencyTitleColor' | translate }}</td>
+      </tr>
+      <tr>
+        <td>borderBottomWidth</td>
+        <td>string</td>
+        <td>{{ 'no' | translate }}</td>
+        <td>3px</td>
+        <td>{{ 'currencyWidgetDescriptionBorderBottomWidth' | translate }}</td>
+      </tr>
+      <tr>
+        <td>borderBottomColor</td>
+        <td>string</td>
+        <td>{{ 'no' | translate }}</td>
+        <td>#9da09f</td>
+        <td>{{ 'currencyWidgetDescriptionBorderBottomColor' | translate }}</td>
+      </tr>
+    </table>
   </mat-tab>
-  <mat-tab label="EXAMPLES">
+  <mat-tab label="{{ 'examples' | translate }}">
     <mat-card>
       <mat-card-header>
-        <mat-card-title>Basic</mat-card-title>
+        <mat-card-title>{{ 'currencyWidgetBasic' | translate }}</mat-card-title>
       </mat-card-header>
       <mat-card-content>
         <mat-tab-group>
@@ -33,7 +133,7 @@
 
     <mat-card>
       <mat-card-header>
-        <mat-card-title>Horizontal</mat-card-title>
+        <mat-card-title>{{ 'currencyWidgetHorizontal' | translate }}</mat-card-title>
       </mat-card-header>
       <mat-card-content>
         <mat-tab-group>
@@ -88,7 +188,7 @@
 
     <mat-card>
       <mat-card-header>
-        <mat-card-title>Vertical</mat-card-title>
+        <mat-card-title>{{ 'currencyWidgetVertical' | translate }}</mat-card-title>
       </mat-card-header>
       <mat-card-content>
         <mat-tab-group>

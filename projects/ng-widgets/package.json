@@ -1,6 +1,25 @@
 {
   "name": "ng-widgets",
-  "version": "0.0.1",
+  "version": "1.0.0",
+  "description": "Angular Widgets includes a variety of components that you can easily use in your applications.",
+  "author": "Mehmet Sert",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/MehmetSert/ng-widgets.git"
+  },
+  "homepage": "https://github.com/MehmetSert/ng-widgets",
+  "keywords": [
+    "angular",
+    "angular 2",
+    "angular 8",
+    "angular widgets",
+    "angular exchange rate",
+    "angular currency rate",
+    "angular weather widget",
+    "angular todo list widget",
+    "angular progress widget"
+  ],
+  "license": "MIT",
   "peerDependencies": {
     "@angular/common": "^8.2.4",
     "@angular/core": "^8.2.4"

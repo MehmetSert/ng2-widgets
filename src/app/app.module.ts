@@ -1,5 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import {APP_INITIALIZER, NgModule} from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -22,6 +22,9 @@ import xml from 'highlight.js/lib/languages/xml';
 import scss from 'highlight.js/lib/languages/scss';
 import typescript from 'highlight.js/lib/languages/typescript';
 import { SafeHtmlPipe } from './pipes/safe-html.pipe';
+import {HttpClientModule} from '@angular/common/http';
+import {TranslateService} from './services/translate.service';
+import { TranslatePipe } from './pipes/translate.pipe';
 
 export function hljsLanguages() {
   return [
@@ -31,13 +34,19 @@ export function hljsLanguages() {
   ];
 }
 
+export function setupTranslateFactory(
+  service: TranslateService): Function {
+  return () => service.use('en');
+}
+
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     CurrencyWidgetComponent,
     StartComponent,
-    SafeHtmlPipe
+    SafeHtmlPipe,
+    TranslatePipe
   ],
   imports: [
     BrowserModule,
@@ -54,9 +63,17 @@ export function hljsLanguages() {
     MatCardModule,
     HighlightModule.forRoot({
       languages: hljsLanguages
-    })
+    }),
+    HttpClientModule
   ],
-  providers: [],
+  providers: [
+    {
+      provide: APP_INITIALIZER,
+      useFactory: setupTranslateFactory,
+      deps: [ TranslateService ],
+      multi: true
+    }
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

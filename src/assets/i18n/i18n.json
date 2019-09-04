@@ -1,0 +1,166 @@
+{
+  "docs": {
+    "tr": "Döküman",
+    "en": "Docs"
+  },
+  "getStarted": {
+    "tr": "Başlangıç",
+    "en": "Get Started"
+  },
+  "widgets": {
+    "tr": "Bileşenler",
+    "en": "Widgets"
+  },
+  "currency": {
+    "tr": "Para Birimi",
+    "en": "Currency"
+  },
+  "weather": {
+    "tr": "Hava Durumu",
+    "en": "Weather"
+  },
+  "progress": {
+    "tr": "İlerleme",
+    "en": "Progress"
+  },
+  "table": {
+    "tr": "Tablo",
+    "en": "Table"
+  },
+  "todoList": {
+    "tr": "Yapılacak Listesi",
+    "en": "Todo list"
+  },
+  "weeklySales": {
+    "tr": "Satış",
+    "en": "Weekly sales"
+  },
+  "comingSoon": {
+    "tr": "Yakında",
+    "en": "Coming Soon"
+  },
+  "angularWidgetsDescription": {
+    "tr": "Angular Widgets içerisinde, uygulamalarınızda kolayca kullanabileceğiniz çeşitli bileşenleri barındırır.",
+    "en": "Angular Widgets includes a variety of components that you can easily use in your applications."
+  },
+  "installation": {
+    "tr": "Kurulum",
+    "en": "Installation"
+  },
+  "installationText": {
+    "tr": "Paketi yüklemek için npm'i kullanabilirsiniz.",
+    "en": "You can use npm to install the package."
+  },
+  "use": {
+    "tr": "Kullanım",
+    "en": "Use"
+  },
+  "useTextStrong": {
+    "tr": "Bileşen modüllerini içe aktar.",
+    "en": "Import the component modules"
+  },
+  "useText": {
+    "tr": "Kullanmak istediğiniz her bileşeni içe aktarın. Örnek: Currency Widget;",
+    "en": "Import each component you want to use. Example: Currency Widget;"
+  },
+  "examples": {
+    "tr": "ÖRNEKLER",
+    "en": "EXAMPLES"
+  },
+  "inputs": {
+    "tr": "Girdiler",
+    "en": "Inputs"
+  },
+  "name": {
+    "tr": "İsim",
+    "en": "Name"
+  },
+  "type": {
+    "tr": "Tip",
+    "en": "Type"
+  },
+  "required": {
+    "tr": "Zorunlu",
+    "en": "Required"
+  },
+  "default": {
+    "tr": "Varsayılan",
+    "en": "Default"
+  },
+  "description": {
+    "tr": "Açıklama",
+    "en": "Description"
+  },
+  "yes": {
+    "tr": "evet",
+    "en": "yes"
+  },
+  "no": {
+    "tr": "hayır",
+    "en": "no"
+  },
+  "currencyWidgetBasic": {
+    "tr": "Basit",
+    "en": "Basic"
+  },
+  "currencyWidgetHorizontal": {
+    "tr": "Yatay",
+    "en": "Horizontal"
+  },
+  "currencyWidgetVertical": {
+    "tr": "Dikey",
+    "en": "Vertical"
+  },
+  "currencyWidgetDescriptionStatus": {
+    "tr": "Para biriminin artışta mı düşüşte mi olduğunu belirler. true ise artışta, false ise düşüşte.",
+    "en": "Determines whether the currency is on an increase or a decline. If true, increment, false, decrease."
+  },
+  "currencyWidgetDescriptionCurrencyIcon": {
+    "tr": "Para biriminin ikonunu belirler. Fontawesome kullanılır, örn: 'fas fa-dollar-sign'",
+    "en": "Sets the icon of the currency. Fontawesome is used, eg 'fas fa-dollar-sign'"
+  },
+  "currencyWidgetDescriptionCurrencyTitle": {
+    "tr": "Para biriminin başlığı.",
+    "en": "The title of the currency."
+  },
+  "currencyWidgetDescriptionCurrencyValue": {
+    "tr": "Para biriminin değeri.",
+    "en": "The value of the currency."
+  },
+  "currencyWidgetDescriptionCurrencyPercent": {
+    "tr": "Para biriminin yüzde kaç artışta veya düşüşte olduğunu gösterir.",
+    "en": "Indicates the percentage increase or decrease of the currency."
+  },
+  "currencyWidgetDescriptionCustomClass": {
+    "tr": "Kendiniz bir sınıf tanımlamanızı sağlar.",
+    "en": "Allows you to define a class yourself."
+  },
+  "currencyWidgetDescriptionBgColor": {
+    "tr": "Arka plan rengini belirler.",
+    "en": "Determines the background color."
+  },
+  "currencyWidgetDescriptionTextColor": {
+    "tr": "Yazı rengini belirler.",
+    "en": "Specifies the font color."
+  },
+  "currencyWidgetDescriptionIconBgColor": {
+    "tr": "Para birimi ikonunun arka plan rengini belirler.",
+    "en": "Specifies the background color of the currency symbol."
+  },
+  "currencyWidgetDescriptionIconColor": {
+    "tr": "Para birimi ikonunun rengini belirler.",
+    "en": "Specifies the color of the currency symbol."
+  },
+  "currencyWidgetDescriptionCurrencyTitleColor": {
+    "tr": "Para birimi başlığının rengini belirler.",
+    "en": "Specifies the color of the currency header."
+  },
+  "currencyWidgetDescriptionBorderBottomWidth": {
+    "tr": "Alt çizgi yüksekliğini belirler.",
+    "en": "Bottom line determines the height."
+  },
+  "currencyWidgetDescriptionBorderBottomColor": {
+    "tr": "Alt çizgi rengini belirler.",
+    "en": "Bottom line determines the color."
+  }
+}

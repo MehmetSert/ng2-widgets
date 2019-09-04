@@ -8,6 +8,15 @@ import {Component, OnInit, ViewEncapsulation} from '@angular/core';
 })
 export class CurrencyWidgetComponent implements OnInit {
 
+  moduleImport = `import {WidgetCurrencyModule} from 'ng-widgets/currency';
+
+@NgModule({
+  imports: [
+    WidgetCurrencyModule
+  ]
+})
+`;
+
   basicHtml = `<div style="width: 200px">
   <widget-currency
     [status]="true"
